@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dineshkumar S — Future Cloud &amp; DevOps Engineer</title>
+<meta name="description" content="Portfolio of Dineshkumar S — Cloud &amp; DevOps engineer in training. Projects, certifications, and ways to connect." />
+<meta name="theme-color" content="#080b14" />
+
+<!-- Open Graph -->
+<meta property="og:title" content="Dineshkumar S — Future Cloud & DevOps Engineer" />
+<meta property="og:description" content="Projects, certifications, and ways to connect." />
+<meta property="og:type" content="website" />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600;700;700&display=swap" rel="stylesheet" />
+
+<!-- Inline theme bootstrap — prevents flash of wrong theme on load -->
+<script>
+  (function () {
+    var saved = localStorage.getItem("portfolio-theme");
+    var theme = saved === "dark" || saved === "light"
+      ? saved
+      : (window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "light");
+    document.documentElement.setAttribute("data-theme", theme);
+  })();
+</script>
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ════════════════ NAVIGATION ════════════════ -->
+<nav class="nav" aria-label="Primary">
+  <a href="#hero" class="nav__logo">DK<span style="opacity:.5">.</span>S</a>
+
+  <button class="nav__burger" id="navBurger" aria-label="Toggle navigation menu" aria-expanded="false">
+    <span></span>
+  </button>
+
+  <div class="nav__links" id="navLinks">
+    <a href="#hero" class="nav__link">Home</a>
+    <a href="#project" class="nav__link">Projects</a>
+    <a href="#certs" class="nav__link">Certificates</a>
+    <a href="#connect" class="nav__link">Contact</a>
+    <div class="nav__toggle-wrap">
+      <button id="themeToggle" class="theme-toggle" role="switch" aria-checked="true" aria-label="Switch to light mode">
+        <span class="theme-toggle__track"></span>
+        <span class="theme-toggle__stars"><span></span><span></span><span></span></span>
+        <span class="theme-toggle__thumb">
+          <span class="theme-toggle__icon theme-toggle__icon--moon">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="currentColor"><path d="M12.5 8.2a5 5 0 11-6.7-6.7 5.5 5.5 0 106.7 6.7z"/></svg>
+          </span>
+          <span class="theme-toggle__icon theme-toggle__icon--sun">
+            <svg width="13" height="13" viewBox="0 0 14 14" fill="currentColor"><circle cx="7" cy="7" r="3"/><path d="M7 0v2M7 12v2M14 7h-2M2 7H0M11.9 2.1l-1.4 1.4M3.5 10.5L2.1 11.9M11.9 11.9l-1.4-1.4M3.5 3.5L2.1 2.1" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<!-- ════════════════ HERO ════════════════ -->
+<section class="hero" id="hero" aria-label="Introduction">
+  <div class="hero__bg" aria-hidden="true">
+    <div class="hero__bg-grid"></div>
+    <div class="bg-blob hero__bg-glow hero__bg-glow--left"></div>
+    <div class="bg-blob hero__bg-glow hero__bg-glow--right"></div>
+  </div>
+
+  <div class="hero__content">
+    <div class="hero__badge">
+      <span class="hero__badge-dot"></span>
+      Open to Opportunities · 2026
+    </div>
+
+    <h1 class="hero__name" aria-label="Dineshkumar S">
+      <span class="hero__name-line hero__name-line--first">Dinesh</span><span class="hero__name-line hero__name-line--last">kumar S</span>
+    </h1>
+
+    <div class="hero__role" aria-live="polite">
+      <span class="hero__role-prefix">Future </span><span class="hero__role-typed" id="typed-text"></span><span class="hero__cursor" aria-hidden="true">|</span>
+    </div>
+
+    <p class="hero__tagline">
+      Building the bridge between cloud infrastructure,<br class="hero__br" />
+      automation, and intelligent systems.
+    </p>
+
+    <div class="hero__actions">
+      <a href="#project" class="btn btn--primary" data-magnetic>View Projects</a>
+      <a href="#connect" class="btn btn--ghost" data-magnetic>Get in Touch</a>
+    </div>
+
+    <div class="hero__stats">
+      <div class="hero__stat"><span class="hero__stat-value">3</span><span class="hero__stat-label">Certifications</span></div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat"><span class="hero__stat-value">1</span><span class="hero__stat-label">Live Project</span></div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat"><span class="hero__stat-value">10+</span><span class="hero__stat-label">Tech Skills</span></div>
+      <div class="hero__stat-divider"></div>
+      <div class="hero__stat"><span class="hero__stat-value">3</span><span class="hero__stat-label">Workshops</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ════════════════ PROJECTS ════════════════ -->
+<section class="section proj" id="project" aria-label="Projects">
+  <div class="section__bg" aria-hidden="true">
+    <div class="bg-blob proj__bg-blob--a"></div>
+    <div class="bg-blob proj__bg-blob--b"></div>
+  </div>
+
+  <div class="section__header">
+    <span class="section-eyebrow proj__eyebrow">// FLAGSHIP PROJECT</span>
+    <h2 class="section-heading">Built to Ship</h2>
+    <p class="section-sub">Real-world solutions engineered from scratch.</p>
+  </div>
+
+  <div class="proj__card-wrap">
+    <article class="proj__card" aria-label="Opportune Hub project">
+
+      <div class="proj__card-top">
+        <div class="proj__card-meta">
+          <span class="proj__tag proj__tag--live"><span class="proj__tag-dot"></span>Active</span>
+          <span class="proj__tag proj__tag--type">Full-Stack Platform</span>
+        </div>
+        <div class="proj__card-icon" aria-hidden="true">
+          <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="14" cy="14" r="11" stroke="url(#icon-grad)" stroke-width="1.5"/>
+            <path d="M9 14h10M14 9l5 5-5 5" stroke="url(#icon-grad)" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <defs><linearGradient id="icon-grad" x1="3" y1="3" x2="25" y2="25" gradientUnits="userSpaceOnUse"><stop stop-color="#60a5fa"/><stop offset="1" stop-color="#a78bfa"/></linearGradient></defs>
+          </svg>
+        </div>
+      </div>
+
+      <h3 class="proj__name">Opportune Hub</h3>
+      <p class="proj__desc">A unified platform that connects students with internships, hackathons, certifications, placements, and career opportunities — all in one intelligent hub.</p>
+
+      <div class="proj__tabs" role="tablist" aria-label="Project details">
+        <button class="proj__tab proj__tab--active" role="tab" aria-selected="true"  aria-controls="tab-overview"   id="btn-overview">Overview</button>
+        <button class="proj__tab" role="tab" aria-selected="false" aria-controls="tab-features"   id="btn-features">Features</button>
+        <button class="proj__tab" role="tab" aria-selected="false" aria-controls="tab-tech"        id="btn-tech">Tech Stack</button>
+        <button class="proj__tab" role="tab" aria-selected="false" aria-controls="tab-challenges"  id="btn-challenges">Challenges</button>
+        <button class="proj__tab" role="tab" aria-selected="false" aria-controls="tab-future"      id="btn-future">Future Scope</button>
+      </div>
+
+      <div class="proj__panels">
+
+        <div class="proj__panel proj__panel--active" id="tab-overview" role="tabpanel" aria-labelledby="btn-overview">
+          <p class="proj__panel-body">Students today waste hours scattered across dozens of portals — one site for internships, another for hackathons, another for certifications. Opportune Hub eliminates that fragmentation by aggregating every career-building opportunity into a single, personalised dashboard.</p>
+          <p class="proj__panel-body">The platform intelligently surfaces relevant opportunities based on a student's branch, year, and skill profile — turning passive browsing into active career development.</p>
+          <div class="proj__stats-row">
+            <div class="proj__stat"><span class="proj__stat-val">5+</span><span class="proj__stat-lbl">Opportunity types</span></div>
+            <div class="proj__stat"><span class="proj__stat-val">1</span><span class="proj__stat-lbl">Unified dashboard</span></div>
+            <div class="proj__stat"><span class="proj__stat-val">0</span><span class="proj__stat-lbl">Platform switching</span></div>
+          </div>
+        </div>
+
+        <div class="proj__panel" id="tab-features" role="tabpanel" aria-labelledby="btn-features" hidden>
+          <ul class="proj__feature-list">
+            <li class="proj__feature-item">
+              <span class="proj__feature-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              <div><strong class="proj__feature-title">Aggregated opportunity feed</strong><p class="proj__feature-desc">Internships, hackathons, certifications, placements, and events pulled into one scrollable feed with filter and search.</p></div>
+            </li>
+            <li class="proj__feature-item">
+              <span class="proj__feature-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              <div><strong class="proj__feature-title">Personalised student profile</strong><p class="proj__feature-desc">Students build a profile with skills, branch, and year — used to rank and recommend the most relevant opportunities first.</p></div>
+            </li>
+            <li class="proj__feature-item">
+              <span class="proj__feature-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              <div><strong class="proj__feature-title">Deadline tracker &amp; reminders</strong><p class="proj__feature-desc">Visual countdown timers and optional email alerts so students never miss an application deadline again.</p></div>
+            </li>
+            <li class="proj__feature-item">
+              <span class="proj__feature-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              <div><strong class="proj__feature-title">Admin portal for colleges</strong><p class="proj__feature-desc">Placement coordinators can post drives, track applications, and export placement reports directly from the platform.</p></div>
+            </li>
+            <li class="proj__feature-item">
+              <span class="proj__feature-icon" aria-hidden="true"><svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8h12M8 2v12" stroke="#60a5fa" stroke-width="1.5" stroke-linecap="round"/></svg></span>
+              <div><strong class="proj__feature-title">Resource library</strong><p class="proj__feature-desc">Curated prep materials — aptitude guides, resume templates, interview question banks — linked directly to active listings.</p></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="proj__panel" id="tab-tech" role="tabpanel" aria-labelledby="btn-tech" hidden>
+          <div class="proj__tech-groups">
+            <div class="proj__tech-group"><span class="proj__tech-group-label">Frontend</span><div class="proj__tech-chips">
+              <span class="proj__chip proj__chip--blue">HTML5</span><span class="proj__chip proj__chip--blue">CSS3</span><span class="proj__chip proj__chip--blue">JavaScript</span><span class="proj__chip proj__chip--blue">React</span>
+            </div></div>
+            <div class="proj__tech-group"><span class="proj__tech-group-label">Backend</span><div class="proj__tech-chips">
+              <span class="proj__chip proj__chip--violet">Node.js</span><span class="proj__chip proj__chip--violet">Express.js</span><span class="proj__chip proj__chip--violet">REST API</span>
+            </div></div>
+            <div class="proj__tech-group"><span class="proj__tech-group-label">Database &amp; Auth</span><div class="proj__tech-chips">
+              <span class="proj__chip proj__chip--emerald">MongoDB</span><span class="proj__chip proj__chip--emerald">JWT</span><span class="proj__chip proj__chip--emerald">bcrypt</span>
+            </div></div>
+            <div class="proj__tech-group"><span class="proj__tech-group-label">Cloud &amp; DevOps</span><div class="proj__tech-chips">
+              <span class="proj__chip proj__chip--amber">AWS EC2</span><span class="proj__chip proj__chip--amber">AWS S3</span><span class="proj__chip proj__chip--amber">GitHub Actions</span><span class="proj__chip proj__chip--amber">Docker</span>
+            </div></div>
+            <div class="proj__tech-group"><span class="proj__tech-group-label">Tools</span><div class="proj__tech-chips">
+              <span class="proj__chip proj__chip--gray">VS Code</span><span class="proj__chip proj__chip--gray">Postman</span><span class="proj__chip proj__chip--gray">Git</span><span class="proj__chip proj__chip--gray">Figma</span>
+            </div></div>
+          </div>
+        </div>
+
+        <div class="proj__panel" id="tab-challenges" role="tabpanel" aria-labelledby="btn-challenges" hidden>
+          <div class="proj__challenge-list">
+            <div class="proj__challenge"><div class="proj__challenge-num">01</div><div><strong class="proj__challenge-title">Data aggregation at scale</strong><p class="proj__challenge-desc">Pulling live listings from heterogeneous sources (LinkedIn, Internshala, Devfolio) without a unified API required building a robust scraping and normalisation layer with rate-limit handling.</p></div></div>
+            <div class="proj__challenge"><div class="proj__challenge-num">02</div><div><strong class="proj__challenge-title">Relevance ranking without ML</strong><p class="proj__challenge-desc">Matching students to opportunities meaningfully before introducing ML required a hand-crafted scoring algorithm weighing skills overlap, deadline proximity, and application volume.</p></div></div>
+            <div class="proj__challenge"><div class="proj__challenge-num">03</div><div><strong class="proj__challenge-title">Role-based access complexity</strong><p class="proj__challenge-desc">Supporting three distinct roles — student, admin, and company — with separate dashboards and permissions within a single codebase required careful JWT scoping and middleware architecture.</p></div></div>
+            <div class="proj__challenge"><div class="proj__challenge-num">04</div><div><strong class="proj__challenge-title">Mobile-first performance</strong><p class="proj__challenge-desc">Most students browse on low-end phones on college Wi-Fi. Achieving sub-2s load time required aggressive lazy loading, image optimisation, and CDN-backed static assets.</p></div></div>
+          </div>
+        </div>
+
+        <div class="proj__panel" id="tab-future" role="tabpanel" aria-labelledby="btn-future" hidden>
+          <div class="proj__future-grid">
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">AI-powered matching</strong><p class="proj__future-body">Integrating an NLP-based recommendation engine that learns from application history to progressively improve opportunity relevance.</p></div>
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">Resume builder</strong><p class="proj__future-body">An in-platform resume editor that auto-fills from the student profile and exports ATS-optimised PDFs tailored to each application.</p></div>
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">Mock interview module</strong><p class="proj__future-body">AI-driven mock interviews with role-specific question banks and feedback on answer quality, confidence indicators, and keyword coverage.</p></div>
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">College partnerships</strong><p class="proj__future-body">White-label deployment for placement cells at partner institutions, with custom branding and college-specific opportunity pipelines.</p></div>
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">Mobile app</strong><p class="proj__future-body">A React Native companion app with push notifications for deadline alerts and new opportunity drops — keeping students informed without opening a browser.</p></div>
+            <div class="proj__future-card"><div class="proj__future-icon"><svg width="20" height="20" viewBox="0 0 20 20" fill="none"><circle cx="10" cy="10" r="8" stroke="#a78bfa" stroke-width="1.4"/><path d="M7 10l2 2 4-4" stroke="#a78bfa" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></div><strong class="proj__future-title">Analytics dashboard</strong><p class="proj__future-body">Placement insights for college administrators: application funnel rates, company return rates, and offer trend analysis across departments and years.</p></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="proj__ctas">
+        <a href="https://github.com/dineshkumar070306" target="_blank" rel="noopener noreferrer" class="proj__cta proj__cta--ghost" data-magnetic aria-label="View source on GitHub">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.166 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.013-1.703-2.782.604-3.369-1.342-3.369-1.342-.454-1.154-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.004.07 1.532 1.032 1.532 1.032.891 1.529 2.341 1.087 2.91.832.091-.647.349-1.087.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.269 2.75 1.026A9.564 9.564 0 0112 6.844a9.59 9.59 0 012.504.337c1.909-1.295 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.841-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.337-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+          View on GitHub
+        </a>
+        <a href="#" class="proj__cta proj__cta--primary" data-magnetic aria-label="Open live demo">
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10M8 3l5 5-5 5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          Live Demo
+        </a>
+      </div>
+
+    </article>
+  </div>
+</section>
+
+<!-- ════════════════ CERTIFICATES ════════════════ -->
+<section class="section cert" id="certs" aria-label="Certificates">
+  <div class="section__bg" aria-hidden="true">
+    <div class="bg-blob cert__bg-blob--a"></div>
+    <div class="bg-blob cert__bg-blob--b"></div>
+  </div>
+
+  <div class="section__header reveal" data-reveal>
+    <span class="section-eyebrow cert__eyebrow">// CERTIFICATION VAULT</span>
+    <h2 class="section-heading">Verified Credentials</h2>
+    <p class="section-sub">Continuous learning, backed by certificates from recognised programs.</p>
+  </div>
+
+  <div class="cert__grid">
+
+    <article class="cert__card reveal" data-reveal data-index="0">
+      <button class="cert__thumb" type="button" data-modal-trigger
+              data-title="Introduction to Artificial Intelligence"
+              data-issuer="NPTEL · Swayam"
+              data-date="2025"
+              data-desc="A foundational course covering the core concepts of artificial intelligence — search algorithms, knowledge representation, and reasoning under uncertainty."
+              data-img="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80"
+              aria-label="Preview certificate: Introduction to Artificial Intelligence">
+        <img class="cert__img" src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800&q=80" alt="Introduction to Artificial Intelligence certificate thumbnail" loading="lazy" />
+        <span class="cert__thumb-overlay">
+          <span class="cert__zoom-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="9.5" cy="9.5" r="6.5" stroke="white" stroke-width="1.6"/><path d="M14.2 14.2L19 19" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="cert__overlay-text">Click to preview</span>
+        </span>
+      </button>
+      <div class="cert__body">
+        <span class="cert__badge">AI &amp; ML</span>
+        <h3 class="cert__name">Introduction to Artificial Intelligence</h3>
+        <p class="cert__issuer">NPTEL · Swayam</p>
+      </div>
+    </article>
+
+    <article class="cert__card reveal" data-reveal data-index="1">
+      <button class="cert__thumb" type="button" data-modal-trigger
+              data-title="Artificial Intelligence Fundamentals"
+              data-issuer="IBM SkillsBuild"
+              data-date="2025"
+              data-desc="Hands-on fundamentals of AI systems — machine learning basics, neural networks, and real-world applications across industries."
+              data-img="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80"
+              aria-label="Preview certificate: Artificial Intelligence Fundamentals">
+        <img class="cert__img" src="https://images.unsplash.com/photo-1620712943543-bcc4688e7485?w=800&q=80" alt="Artificial Intelligence Fundamentals certificate thumbnail" loading="lazy" />
+        <span class="cert__thumb-overlay">
+          <span class="cert__zoom-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="9.5" cy="9.5" r="6.5" stroke="white" stroke-width="1.6"/><path d="M14.2 14.2L19 19" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="cert__overlay-text">Click to preview</span>
+        </span>
+      </button>
+      <div class="cert__body">
+        <span class="cert__badge">AI &amp; ML</span>
+        <h3 class="cert__name">Artificial Intelligence Fundamentals</h3>
+        <p class="cert__issuer">IBM SkillsBuild</p>
+      </div>
+    </article>
+
+    <article class="cert__card reveal" data-reveal data-index="2">
+      <button class="cert__thumb" type="button" data-modal-trigger
+              data-title="Smart English Basics for Professionals"
+              data-issuer="Skill India · NPTEL"
+              data-date="2024"
+              data-desc="Professional communication training covering workplace English, email etiquette, and presentation skills for technical careers."
+              data-img="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80"
+              aria-label="Preview certificate: Smart English Basics for Professionals">
+        <img class="cert__img" src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?w=800&q=80" alt="Smart English Basics for Professionals certificate thumbnail" loading="lazy" />
+        <span class="cert__thumb-overlay">
+          <span class="cert__zoom-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="9.5" cy="9.5" r="6.5" stroke="white" stroke-width="1.6"/><path d="M14.2 14.2L19 19" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="cert__overlay-text">Click to preview</span>
+        </span>
+      </button>
+      <div class="cert__body">
+        <span class="cert__badge cert__badge--violet">Communication</span>
+        <h3 class="cert__name">Smart English Basics for Professionals</h3>
+        <p class="cert__issuer">Skill India · NPTEL</p>
+      </div>
+    </article>
+
+    <article class="cert__card reveal" data-reveal data-index="3">
+      <button class="cert__thumb" type="button" data-modal-trigger
+              data-title="Sentiment Analysis using Python"
+              data-issuer="Infosys Springboard"
+              data-date="2025"
+              data-desc="Applied NLP project work building sentiment classification models in Python using text preprocessing, tokenization, and machine learning classifiers."
+              data-img="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80"
+              aria-label="Preview certificate: Sentiment Analysis using Python">
+        <img class="cert__img" src="https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?w=800&q=80" alt="Sentiment Analysis using Python certificate thumbnail" loading="lazy" />
+        <span class="cert__thumb-overlay">
+          <span class="cert__zoom-icon" aria-hidden="true"><svg width="22" height="22" viewBox="0 0 22 22" fill="none"><circle cx="9.5" cy="9.5" r="6.5" stroke="white" stroke-width="1.6"/><path d="M14.2 14.2L19 19" stroke="white" stroke-width="1.6" stroke-linecap="round"/></svg></span>
+          <span class="cert__overlay-text">Click to preview</span>
+        </span>
+      </button>
+      <div class="cert__body">
+        <span class="cert__badge cert__badge--emerald">Python · NLP</span>
+        <h3 class="cert__name">Sentiment Analysis using Python</h3>
+        <p class="cert__issuer">Infosys Springboard</p>
+      </div>
+    </article>
+
+  </div>
+</section>
+
+<!-- ════════════════ CONTACT ════════════════ -->
+<section class="section contact" id="connect" aria-label="Contact">
+  <div class="section__bg" aria-hidden="true">
+    <div class="bg-blob contact__bg-blob--a"></div>
+    <div class="bg-blob contact__bg-blob--b"></div>
+  </div>
+
+  <div class="section__header">
+    <span class="section-eyebrow contact__eyebrow">// GET IN TOUCH</span>
+    <h2 class="section-heading">Let's Connect</h2>
+    <p class="section-sub">Have an opportunity, question, or just want to say hi? Drop a message below.</p>
+  </div>
+
+  <div class="contact__wrap">
+    <form class="contact__form" id="contactForm" novalidate>
+
+      <div class="contact__honeypot" aria-hidden="true">
+        <label for="company">Company</label>
+        <input type="text" id="company" name="company" tabindex="-1" autocomplete="off" />
+      </div>
+
+      <div class="contact__row">
+        <div class="contact__field">
+          <label class="contact__label" for="from_name">Name</label>
+          <input class="contact__input" type="text" id="from_name" name="from_name" placeholder="Your full name" autocomplete="name" required minlength="2" maxlength="80" />
+          <span class="contact__error" id="err-name" role="alert"></span>
+        </div>
+        <div class="contact__field">
+          <label class="contact__label" for="reply_to">Email</label>
+          <input class="contact__input" type="email" id="reply_to" name="reply_to" placeholder="you@example.com" autocomplete="email" required />
+          <span class="contact__error" id="err-email" role="alert"></span>
+        </div>
+      </div>
+
+      <div class="contact__field">
+        <label class="contact__label" for="subject">Subject</label>
+        <input class="contact__input" type="text" id="subject" name="subject" placeholder="What's this about?" required minlength="3" maxlength="120" />
+        <span class="contact__error" id="err-subject" role="alert"></span>
+      </div>
+
+      <div class="contact__field">
+        <label class="contact__label" for="message">Message</label>
+        <textarea class="contact__input contact__textarea" id="message" name="message" placeholder="Tell me a bit more..." rows="6" required minlength="10" maxlength="2000"></textarea>
+        <div class="contact__field-footer">
+          <span class="contact__error" id="err-message" role="alert"></span>
+          <span class="contact__char-count" id="charCount">0 / 2000</span>
+        </div>
+      </div>
+
+      <button class="contact__submit" type="submit" id="submitBtn">
+        <span class="contact__submit-label">Send Message</span>
+        <span class="contact__submit-spinner" aria-hidden="true"></span>
+      </button>
+
+      <div class="contact__status" id="formStatus" role="status" aria-live="polite"></div>
+    </form>
+  </div>
+</section>
+
+<!-- ════════════════ FOOTER ════════════════ -->
+<footer class="footer">
+  <div class="footer__links">
+    <a href="https://github.com/dineshkumar070306" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="GitHub">GitHub</a>
+    <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer" class="footer__link" aria-label="LinkedIn">LinkedIn</a>
+    <a href="mailto:dineshkumar@example.com" class="footer__link" aria-label="Email">Email</a>
+  </div>
+  <p class="footer__text">© 2026 Dineshkumar S. Built from scratch, deployed on GitHub Pages.</p>
+</footer>
+
+<!-- Back to top -->
+<button class="back-to-top" id="backToTop" aria-label="Back to top">
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M9 14V4M4 9l5-5 5 5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+</button>
+
+<!-- Certificate modal -->
+<div class="cert-modal" id="certModal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="cert-modal__backdrop" data-modal-close></div>
+  <div class="cert-modal__panel">
+    <button class="cert-modal__close" type="button" data-modal-close aria-label="Close preview">
+      <svg width="18" height="18" viewBox="0 0 18 18" fill="none"><path d="M4 4l10 10M14 4L4 14" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg>
+    </button>
+    <div class="cert-modal__img-wrap"><img class="cert-modal__img" id="modalImg" src="" alt="" /></div>
+    <div class="cert-modal__info">
+      <span class="cert-modal__date" id="modalDate"></span>
+      <h3 class="cert-modal__title" id="modalTitle"></h3>
+      <p class="cert-modal__issuer" id="modalIssuer"></p>
+      <p class="cert-modal__desc" id="modalDesc"></p>
+    </div>
+  </div>
+</div>
+
+<!-- EmailJS SDK (only used by contact form submission) -->
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
